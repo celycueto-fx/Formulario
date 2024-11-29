@@ -19,58 +19,53 @@
                 <section class="principal">
                     <h3>Selecciona tu carrera</h3>
                     <label for="career">Carrera:</label>
-                    <select id="career" name="career" required title="Por favor, selecciona una carrera">
-                        <!-- Opciones de carrera aquí -->
+                    <select id="career" name="career"  title="Por favor,añada la carrera a inscribir"  required>
+
                     </select>
                 </section>
-
                 <!-- Información personal -->
                 <div class="card">
                     <h2>Información personal</h2>
                     <section class="colPersonal">
                         <div>
                             <label for="fullName">Primer nombre*</label>
-                            <input type="text" id="fullName" name="fullName" placeholder="Ej. Juan" required
-                                title="Por favor, ingresa tu primer nombre">
+                            <input type="text" id="fullName"  title="Por favor,añada primer nombre"  name="fullName" placeholder="Ej. Juan" required>
 
                             <label for="secondName">Segundo nombre</label>
-                            <input type="text" id="secondName" name="secondName" placeholder="Ej. Esteban"
-                                title="Ingresa tu segundo nombre (opcional)">
+                            <input type="text" id="secondName" name="secondName" placeholder="Ej. Esteban">
 
                             <label for="firstLastName">Primer apellido*</label>
-                            <input type="text" id="firstLastName" name="firstLastName" placeholder="Ej. Peréz" required
-                                title="Por favor, ingresa tu primer apellido">
+                            <input type="text" id="firstLastName"  title="Por favor,añada primer apellido"  name="firstLastName" placeholder="Ej. Peréz" required>
 
                             <label for="secondLastName">Segundo apellido*</label>
-                            <input type="text" id="secondLastName" name="secondLastName" placeholder="Ej. Carrascal"
-                                required title="Por favor, ingresa tu segundo apellido">
+                            <input type="text" id="secondLastName"  title="Por favor,añada segundo apellido" name="secondLastName" placeholder="Ej. Carrascal "
+                                required>
+
 
                             <label for="bornDate">Fecha de nacimiento*</label>
-                            <input type="date" id="bornDate" name="bornDate" placeholder="Ej. 07/23/1998" required
-                                title="Por favor, ingresa tu fecha de nacimiento">
+                            <input type="date" id="bornDate"  title="Por favor,añada fecha de nacimiento" name="bornDate" placeholder="Ej. 07/23/1998" required>
 
                             <label for="typeDocument">Tipo de documento*</label>
-                            <select id="typeDocument" name="typeDocument" required
-                                title="Selecciona el tipo de documento">
-                                <!-- Opciones de tipo de documento aquí -->
+                            <select id="typeDocument"  title="Por favor,añada tipo documento"  name="typeDocument" required>
                             </select>
                         </div>
-
                         <div>
                             <label for="numberDocument">Número de documento*</label>
-                            <input type="text" id="numberDocument" name="numberDocument" placeholder="Ej. 1132342234"
-                                required title="Por favor, ingresa tu número de documento">
+                            <input type="text" id="numberDocument" name="numberDocument"
+                            title="Por favor,añada Sexo biológico" placeholder="Ej. 1132342234 "
+                                required>
 
                             <label for="gender">Sexo biológico*</label>
-                            <select id="gender" name="gender" required title="Selecciona tu sexo biológico">
+                            <select id="gender" name="gender" required>
                                 <option value="">Seleccione...</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Femenino">Femenino</option>
                                 <option value="Otro">Otro</option>
                             </select>
 
+
                             <label for="status">Estado civil*</label>
-                            <select id="status" name="status" required title="Por favor, selecciona tu estado civil">
+                            <select id="status" name="status"  title="Por favor, estado civil" required>
                                 <option value="">Seleccione...</option>
                                 <option value="Soltero(a)">Soltero(a)</option>
                                 <option value="Casado(a)">Casado(a)</option>
@@ -79,18 +74,19 @@
                             </select>
 
                             <label for="email">Correo electrónico*</label>
-                            <input type="email" id="email" name="email" placeholder="Ej. correo@ejemplo.com" required
-                                title="Por favor, ingresa un correo electrónico válido">
+                            <input type="email" id="email" name="email" placeholder="Ej. correo@ejemplo.com "
+                                title="Por favor, ingresa un correo electrónico válido (ej. correo@ejemplo.com)"
+                                required>
 
                             <label for="tel">Teléfono:</label>
-                            <input type="tel" id="tel" name="tel" pattern="^\+?[0-9\s\-]{7,15}$"
-                                placeholder="Ej. 66234134 "
-                                title="El teléfono debe contener entre 7 y 15 dígitos, y puede incluir el símbolo '+' al inicio.">
+                            <input pattern="^\+?[0-9\s\-]{7,15}$"
+                                title="El teléfono debe contener entre 7 y 15 dígitos, y puede incluir el símbolo '+' al inicio."
+                                type="tel" id="tel" name="tel" placeholder="Ej. 66234134 ">
 
-                            <label for="cel">Celular*</label>
-                            <input type="tel" id="cel" name="cel" pattern="^\+?[0-9\s\-]{7,15}$"
-                                placeholder="Ej. +57 123456331 " required
-                                title="El celular debe contener entre 7 y 15 dígitos, y puede incluir el símbolo '+' al inicio">
+                            <label for="cel">Celular:</label>
+                            <input pattern="^\+?[0-9\s\-]{7,15}$"
+                                title="El celular debe contener entre 7 y 15 dígitos, y puede incluir el símbolo '+' al inicio."
+                                type="tel" id="cel" name="cel" placeholder="Ej. +57 123456331 " required>
                         </div>
                     </section>
 
@@ -100,59 +96,136 @@
                         <div class="inforResidencial">
                             <div>
                                 <label for="city">Ciudad*</label>
-                                <input type="text" id="city" name="city" placeholder="Ej. Ciudad de México" required
-                                    title="Por favor, ingresa tu ciudad">
+                                <input type="text" id="city" name="city" title="Por favor,añada la ciudad" placeholder="Ej. Bogotá" required>
+
                             </div>
                             <div>
                                 <label for="country">País*</label>
-                                <input type="text" id="country" name="country" placeholder="Ej. México" required
-                                    title="Por favor, ingresa tu país">
+                                <input type="text" id="country" name="country"  title="Por favor,añada el pais" placeholder="Ej. Colombia" required>
                             </div>
                         </div>
                         <label for="address">Dirección*</label>
-                        <input type="text" id="address" name="address" placeholder="Ej. Calle 123, Ciudad" required
-                            title="Por favor, ingresa tu dirección completa">
+                        <input type="text" id="address" name="address"  title="Por favor,añada la dirección" placeholder="Ej. Calle 123, Ciudad" required>
+
                     </section>
 
                     <!-- Encuesta personal -->
                     <section>
                         <h2>Encuesta Personal</h2>
                         <div class="paddionSection">
+                            <!-- Pregunta sobre hijos -->
                             <label>¿Tienes hijos?</label>
                             <div id="hijosQuestion" class="options-group">
                                 <label>
-                                    <input type="checkbox" name="children" value="No tengo"
-                                        title="Marca esta opción si no tienes hijos"> No tengo
+                                    <input type="checkbox" name="children" id="children" value="No tengo"> No tengo
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="children" value="1 hijo"
-                                        title="Marca esta opción si tienes 1 hijo"> 1 hijo
+                                    <input type="checkbox" name="children" id="children" value="1 hijo"> 1 hijo
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="children" value="2 hijos"
-                                        title="Marca esta opción si tienes 2 hijos"> 2 hijos
+                                    <input type="checkbox" name="children" id="children" value="2 hijos"> 2 hijos
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="children" value="3 hijos"
-                                        title="Marca esta opción si tienes 3 hijos"> 3 hijos
+                                    <input type="checkbox" name="children" id="children" value="3 hijos"> 3 hijos
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="children" value="4 hijos"
-                                        title="Marca esta opción si tienes 4 hijos"> 4 hijos
+                                    <input type="checkbox" name="children" id="children" value="4 hijos"> 4 hijos
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="children" value="Más de 4 hijos"
-                                        title="Marca esta opción si tienes más de 4 hijos"> Más de 4 hijos
+                                    <input type="checkbox" name="children" id="children" value="Más de 4 hijos"> Más de
+                                    4 hijos
                                 </label>
                             </div>
-                        </div>
-                    </section>
-                </div>
+                            <!-- Trabajo actual -->
+                            <label>¿Usted trabaja actualmente?</label>
+                            <div id="trabajo-options" class="options-group">
+                                <label>
+                                    <input type="checkbox" name="trabajo" id="trabajo" value="No estoy trabajando"> No
+                                    estoy trabajando
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="trabajo" id="trabajo" value="Sí, empleado"> Sí,
+                                    empleado
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="trabajo" id="trabajo" value="Sí, independiente"> Sí,
+                                    independiente
+                                </label>
+                            </div>
 
+                            <!-- Poblaciones culturales -->
+                            <label>¿Se reconoce como parte de alguna de las siguientes poblaciones?</label>
+                            <div for="cultural-group-options" id="cultural-group-options" class="options-group">
+                                <label>
+                                    <input type="checkbox" name="cultura" id="cultura" value="Ninguno"> Ninguno
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cultura" id="cultura" value="Indígenas"> Indígenas
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cultura" id="cultura" value="Afrocolombiano">
+                                    Afrocolombiano
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cultura" id="cultura" value="Raizales"> Raizales
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cultura" id="cultura" value="Pueblo ROM o Gitano">
+                                    Pueblo ROM o Gitano
+                                </label>
+                            </div>
+
+                            <!-- Discapacidad -->
+                            <label>¿Cuenta con alguna discapacidad?</label>
+                            <div for="discapacidad-options" id="discapacidad-options" class="options-group2">
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad" value="Ninguna"
+                                        style="width: 20px;"> Ninguna
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad"
+                                        value="Discapacidad motriz" style="width: 20px;"> Discapacidad motriz
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad"
+                                        value="Discapacidad sorda" style="width: 20px;"> Discapacidad sorda
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad"
+                                        value="Discapacidad cognitiva" style="width: 20px;"> Discapacidad cognitiva
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad" value="Sordoceguera"
+                                        style="width: 20px;"> Sordoceguera
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad"
+                                        value="Trastorno de la voz y habla" style="width: 20px;"> Trastorno de la voz y
+                                    habla
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="discapacidad" id="discapacidad" value="Otra"
+                                        style="width: 20px;"> Otra
+                                </label>
+
+                            </div>
+
+                        </div>
+                        <!-- Input adicional para 'Otra discapacidad' -->
+                        <div class="newLabel">
+                            <label id="extraLabel">¿Cuál es su discapacidad?</label>
+                            <input for="extraInput" type="text" id="extraInput" name="extraInput"
+                                placeholder="Ingrese su discapacidad">
+                        </div>
+
+
+                    </section>
+
+                </div>
                 <!-- Botón de envío -->
                 <button id="saveButton" type="submit" name="saveButton">Guardar</button>
             </form>
-
             <div class="tableP">
                 <h2>Registros</h2>
                 <table id="recordsTable">
