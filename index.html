@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+
+        <div class="contentCard">
+            <h1>Formulario de Inscripción a carrera</h1>
+            <form id="registrationForm" class="container">
+                <!-- Selección de carrera -->
+                <section class="principal">
+                    <h3>Selecciona tu carrera</h3>
+                    <label for="career">Carrera:</label>
+                    <select id="career" name="career" required title="Por favor, selecciona una carrera">
+                        <!-- Opciones de carrera aquí -->
+                    </select>
+                </section>
+
+                <!-- Información personal -->
+                <div class="card">
+                    <h2>Información personal</h2>
+                    <section class="colPersonal">
+                        <div>
+                            <label for="fullName">Primer nombre*</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Ej. Juan" required
+                                title="Por favor, ingresa tu primer nombre">
+
+                            <label for="secondName">Segundo nombre</label>
+                            <input type="text" id="secondName" name="secondName" placeholder="Ej. Esteban"
+                                title="Ingresa tu segundo nombre (opcional)">
+
+                            <label for="firstLastName">Primer apellido*</label>
+                            <input type="text" id="firstLastName" name="firstLastName" placeholder="Ej. Peréz" required
+                                title="Por favor, ingresa tu primer apellido">
+
+                            <label for="secondLastName">Segundo apellido*</label>
+                            <input type="text" id="secondLastName" name="secondLastName" placeholder="Ej. Carrascal"
+                                required title="Por favor, ingresa tu segundo apellido">
+
+                            <label for="bornDate">Fecha de nacimiento*</label>
+                            <input type="date" id="bornDate" name="bornDate" placeholder="Ej. 07/23/1998" required
+                                title="Por favor, ingresa tu fecha de nacimiento">
+
+                            <label for="typeDocument">Tipo de documento*</label>
+                            <select id="typeDocument" name="typeDocument" required
+                                title="Selecciona el tipo de documento">
+                                <!-- Opciones de tipo de documento aquí -->
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="numberDocument">Número de documento*</label>
+                            <input type="text" id="numberDocument" name="numberDocument" placeholder="Ej. 1132342234"
+                                required title="Por favor, ingresa tu número de documento">
+
+                            <label for="gender">Sexo biológico*</label>
+                            <select id="gender" name="gender" required title="Selecciona tu sexo biológico">
+                                <option value="">Seleccione...</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+
+                            <label for="status">Estado civil*</label>
+                            <select id="status" name="status" required title="Por favor, selecciona tu estado civil">
+                                <option value="">Seleccione...</option>
+                                <option value="Soltero(a)">Soltero(a)</option>
+                                <option value="Casado(a)">Casado(a)</option>
+                                <option value="Viudo(a)">Viudo(a)</option>
+                                <option value="Unión libre">Unión libre</option>
+                            </select>
+
+                            <label for="email">Correo electrónico*</label>
+                            <input type="email" id="email" name="email" placeholder="Ej. correo@ejemplo.com" required
+                                title="Por favor, ingresa un correo electrónico válido">
+
+                            <label for="tel">Teléfono:</label>
+                            <input type="tel" id="tel" name="tel" pattern="^\+?[0-9\s\-]{7,15}$"
+                                placeholder="Ej. 66234134 "
+                                title="El teléfono debe contener entre 7 y 15 dígitos, y puede incluir el símbolo '+' al inicio.">
+
+                            <label for="cel">Celular*</label>
+                            <input type="tel" id="cel" name="cel" pattern="^\+?[0-9\s\-]{7,15}$"
+                                placeholder="Ej. +57 123456331 " required
+                                title="El celular debe contener entre 7 y 15 dígitos, y puede incluir el símbolo '+' al inicio">
+                        </div>
+                    </section>
+
+                    <!-- Información de residencia -->
+                    <section class="infoRes">
+                        <h2>Dirección residencial</h2>
+                        <div class="inforResidencial">
+                            <div>
+                                <label for="city">Ciudad*</label>
+                                <input type="text" id="city" name="city" placeholder="Ej. Ciudad de México" required
+                                    title="Por favor, ingresa tu ciudad">
+                            </div>
+                            <div>
+                                <label for="country">País*</label>
+                                <input type="text" id="country" name="country" placeholder="Ej. México" required
+                                    title="Por favor, ingresa tu país">
+                            </div>
+                        </div>
+                        <label for="address">Dirección*</label>
+                        <input type="text" id="address" name="address" placeholder="Ej. Calle 123, Ciudad" required
+                            title="Por favor, ingresa tu dirección completa">
+                    </section>
+
+                    <!-- Encuesta personal -->
+                    <section>
+                        <h2>Encuesta Personal</h2>
+                        <div class="paddionSection">
+                            <label>¿Tienes hijos?</label>
+                            <div id="hijosQuestion" class="options-group">
+                                <label>
+                                    <input type="checkbox" name="children" value="No tengo"
+                                        title="Marca esta opción si no tienes hijos"> No tengo
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="children" value="1 hijo"
+                                        title="Marca esta opción si tienes 1 hijo"> 1 hijo
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="children" value="2 hijos"
+                                        title="Marca esta opción si tienes 2 hijos"> 2 hijos
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="children" value="3 hijos"
+                                        title="Marca esta opción si tienes 3 hijos"> 3 hijos
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="children" value="4 hijos"
+                                        title="Marca esta opción si tienes 4 hijos"> 4 hijos
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="children" value="Más de 4 hijos"
+                                        title="Marca esta opción si tienes más de 4 hijos"> Más de 4 hijos
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Botón de envío -->
+                <button id="saveButton" type="submit" name="saveButton">Guardar</button>
+            </form>
+
+            <div class="tableP">
+                <h2>Registros</h2>
+                <table id="recordsTable">
+                    <thead>
+                        <tr>
+                            <th>Carrera</th>
+                            <th>Nombre Completo</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Correo Electrónico</th>
+                            <th>Teléfono</th>
+                            <th>Celular</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
